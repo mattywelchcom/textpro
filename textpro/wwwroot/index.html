@@ -1,0 +1,161 @@
+﻿<html>
+	<head>
+		<title>𝑻ᴇ𝓍ʇ Ⓟ𝔯𝕠 - Make Text 𝐁𝐨𝐥𝐝, 𝐼𝑡𝑎𝑙𝑖𝑐, U̲n̲d̲e̲r̲l̲i̲n̲e̲d̲, and ℳ𝕠ⓡ𝔢!</title>
+		<script src="javascript.js"></script>
+
+		<style>
+			.classCheckbox {
+				margin:4px;
+				background-color:#EFEFEF;
+				border-radius:4px;
+				border:1px solid #D0D0D0;
+				overflow:auto;
+				/*float:left;*/
+				width:8.0em;
+				-webkit-user-select: none; /* Safari 3.1+ */
+				-moz-user-select: none; /* Firefox 2+ */
+				-ms-user-select: none; /* IE 10+/Edge */
+				user-select: none; /* Standard syntax */
+
+			}
+
+			.classCheckbox label span {
+				text-align:center;
+				padding:3px 0px;
+				display:block;
+			}
+
+			.classCheckbox label input {
+				display:none;
+			}
+
+			.classCheckbox input:checked + span {
+				background-color:#ccf5ff;
+			}
+
+
+			.classButton {
+				margin:4px;
+				background-color:#EFEFEF;
+				border-radius:4px;
+				border:1px solid #D0D0D0;
+				overflow:auto;
+				/*float:left;*/
+				width:8.0em;
+				-webkit-user-select: none; /* Safari 3.1+ */
+				-moz-user-select: none; /* Firefox 2+ */
+				-ms-user-select: none; /* IE 10+/Edge */
+				user-select: none; /* Standard syntax */
+
+			}
+
+			.classButton label span {
+				text-align:center;
+				padding:3px 0px;
+				display:block;
+			}
+
+			.classButton label input {
+				display:none;
+			}
+
+			.classButton:hover {
+				background:#ccf5ff;
+			}
+
+
+			.classLinkColor {
+				color: #0000EE;
+			}
+
+
+			.unselectable {
+				-webkit-user-select: none; /* Safari 3.1+ */
+				-moz-user-select: none; /* Firefox 2+ */
+				-ms-user-select: none; /* IE 10+/Edge */
+				user-select: none; /* Standard syntax */
+			}
+		</style>
+	</head>
+
+	<body onload="fnColors(); fnShowMore();">
+		<center><pre><h1>𝑻 ᴇ 𝓍 ʇ  Ⓟ 𝔯 𝕠</h1></pre></center>
+		<center><pre><h2>Make Text 𝐁𝐨𝐥𝐝, 𝐼𝑡𝑎𝑙𝑖𝑐, U̲n̲d̲e̲r̲l̲i̲n̲e̲d̲, and ℳ𝕠ⓡ𝔢!</h2></pre></center>
+		<br>
+		<center>
+			<table>
+				<tr>
+					<th style="width:125px"><a href="http://www.mattywelch.com/" class="classLinkColor">MattyWelch.com</a></th>
+					<th style="width:25px"></th>
+					<th style="width:125px"><a href="/" class="classLinkColor">TextPro</a></th></center>
+					<th style="width:25px"></th>
+					<th style="width:125px"><a href="/about" class="classLinkColor">About TextPro</a></th>
+				</tr>
+			</table>
+		</center>
+		<br>
+		<center>
+			<p>
+				Input:
+ 				<br>
+				<textarea id="INPUT" rows="4" cols="48"></textarea>
+				<br>
+				<br>
+			</p>
+		</center>
+
+		<center>
+			<table>
+				<tr>
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckSerif" value="1" onclick="fnSerifClick(); fnColors();"><span id="spnSerif">𝐒𝐞𝐫𝐢𝐟</span></label></div></center></th>
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckSans" value="1" onclick="fnSansClick(); fnColors();"><span id="spnSans">𝗦𝗮𝗻𝘀</span></label></div></center></th>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckBold" value="1" onclick="fnBoldClick(); fnColors();"><span id="spnBold">𝐁𝐨𝐥𝐝</span></label></div></center></th>
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckItalic" value="1" onclick="fnItalicClick(); fnColors();"><span id="spnItalic">𝐼𝑡𝑎𝑙𝑖𝑐</span></label></div></center></th> 
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckUnderline" value="1" onclick="fnUnderlineClick(); fnColors();"><span id="spnUnderline">U̲n̲d̲e̲r̲l̲i̲n̲e̲</span></label></div></center></th>
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckMore" value="1" onclick="fnShowMore()"><span><span id="spnMore">v 𝑴𝒐𝒓𝒆</span><span id="spnLess">^ 𝑳𝒆𝒔𝒔</span></span></label></div></center></th>
+				</tr>
+			</table>
+			<table>
+				<tr id="tableRowthree">
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckStrikethrough" value="1" onclick="fnStrikethroughClick(); fnColors();"><span id="spnStrikethrough">S̶t̶r̶i̶k̶e̶t̶h̶r̶o̶u̶g̶h̶</span></label></div></center></th>
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckSmallcaps" value="1" onclick="fnSmallcapsClick(); fnColors();"><span id="spnSmallcaps">Sᴍᴀʟʟ Cᴀᴘs</span></label></div></center></th> 
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckScript" value="1" onclick="fnScriptClick(); fnColors();"><span id="spnScript">𝒮𝒸𝓇𝒾𝓅𝓉</span></label></div></center></th>
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckDoublestruck" value="1" onclick="fnDoublestruckClick(); fnColors();"><span id="spnDoublestruck">𝔻𝕠𝕦𝕓𝕝𝕖 𝕊𝕥𝕣𝕦𝕔𝕜</span></label></div></center></th>
+				</tr>
+			</table>
+			<table>
+				<tr id="tableRowfour">
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckCircled" value="1" onclick="fnCircledClick(); fnColors();"><span id="spnCircled">Ⓒⓘⓡⓒⓛⓔⓓ</span></label></div></center></th>
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckSquared" value="1" onclick="fnSquaredClick(); fnColors();"><span id="spnSquared">🅂🅀🅄🄰🅁🄴🄳</span></label></div></center></th> 
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckFraktur" value="1" onclick="fnFrakturClick(); fnColors();"><span id="spnFraktur">𝔉𝔯𝔞𝔨𝔱𝔲𝔯</span></label></div></center></th>
+					<th><center><div class="classCheckbox"><label><input type="checkbox" id="ckUpsidedown" value="1" onclick="fnUpsidedownClick(); fnColors();"><span id="spnUpsidedown">uʍopǝpısd∩</span></label></div></center></th>
+				</tr>
+			</table>
+			
+		</center>
+
+		<br>
+
+		<center>
+			<p>
+				Output:
+				<br>
+				<textarea id="OUTPUT" rows="4" cols="48"></textarea>
+			</p>
+		</center>
+
+		<br>
+		<center><div class="classButton"><label><input type="button" id="btnSubmit" onclick="fnSubmit()"><span id="spnSubmit">Submit</span></label></div></center>
+		<br>
+
+			<footer>
+				<center>TextPro and MattyWelch.com were developed and designed by Matthew "Matty" Welch.</center>
+				<center>Copyright (C) 2019 Matthew Welch. All rights reserved.</center>
+			</footer>
+	</body>
+
+</html>
